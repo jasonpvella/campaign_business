@@ -9,6 +9,9 @@
 
 ## Historical Log
 
+### 2026-04-19 (session 6)
+- Increased label-tag (section subheaders like "Sound Familiar?") from 12px to 18px (text-lg) site-wide.
+
 ### 2026-04-19 (session 5)
 - Removed the final "Ready to build something that wins?" CTA section from homepage — redundant after the email capture band.
 
