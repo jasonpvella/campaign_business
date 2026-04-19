@@ -38,7 +38,17 @@ When Jason says "Save Project":
 1. Scan the session for new decisions, scope changes, and requirement shifts.
 2. Rewrite `## Executive Snapshot` in `docs/JOURNAL.md` — current focus + next session priorities.
 3. Append a dated `### YYYY-MM-DD` entry to `## Historical Log` with the session delta (decisions, what changed, what's next).
-4. From `blueprint-political/`: `git add -A && git commit -m "chore: save project $(date +%Y-%m-%d)" && git push` — skip push if no remote configured.
+4. From repo root: `git add -A && git commit -m "chore: save project $(date +%Y-%m-%d)" && git push`
+
+---
+
+## Delivery Standard
+
+Before marking any task done:
+1. Run `npx tsc --noEmit` — fix all errors before delivering.
+2. State what changed, what depends on it, and how regressions were ruled out.
+
+Scale to the change: shared hooks/contexts/layouts require explicit consumer audit. Isolated UI changes do not.
 
 ---
 
