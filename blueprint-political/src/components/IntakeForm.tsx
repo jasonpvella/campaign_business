@@ -4,7 +4,7 @@ import { useState } from 'react';
 
 // Formspree legacy endpoint — first submission will send a verification email to Carol.
 // Once she clicks "Confirm Form" in that email, all submissions arrive at carolyvella@gmail.com.
-const FORMSPREE_ENDPOINT = 'https://formspree.io/carolyvella@gmail.com';
+const FORMSPREE_ENDPOINT = 'https://formspree.io/f/mwvaqepn';
 
 export default function IntakeForm() {
   const [submitted, setSubmitted] = useState(false);
