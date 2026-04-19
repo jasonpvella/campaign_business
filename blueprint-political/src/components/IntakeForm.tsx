@@ -25,10 +25,13 @@ export default function IntakeForm() {
       if (res.ok) {
         setSubmitted(true);
       } else {
-        setError('Something went wrong. Please try again or email Carol directly at carolyvella@gmail.com.');
+        const body = await res.json().catch(() => ({}));
+        const detail = body?.error || body?.message || `HTTP ${res.status}`;
+        setError(`Something went wrong (${detail}). Please try again or email Carol directly at carolyvella@gmail.com.`);
       }
-    } catch {
-      setError('Something went wrong. Please try again or email Carol directly at carolyvella@gmail.com.');
+    } catch (err) {
+      const detail = err instanceof Error ? err.message : 'network error';
+      setError(`Something went wrong (${detail}). Please try again or email Carol directly at carolyvella@gmail.com.`);
     } finally {
       setLoading(false);
     }
