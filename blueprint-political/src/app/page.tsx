@@ -224,23 +224,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Final CTA */}
-      <section className="py-24 bg-cream text-center">
-        <div className="max-w-6xl mx-auto px-6">
-          <h2 className="font-serif text-navy text-4xl md:text-5xl mb-4">
-            Ready to build something that wins?
-          </h2>
-          <p className="font-sans text-text-muted text-lg mb-10 max-w-xl mx-auto">
-            Let&apos;s talk. We&apos;re excited to see how we can make your campaign seamless.
-          </p>
-          <Link
-            href="/work-with-me"
-            className="bg-amber text-white font-sans font-semibold px-8 py-4 rounded text-lg hover:bg-amber/90 transition-colors inline-block"
-          >
-            Inquire Now →
-          </Link>
-        </div>
-      </section>
     </>
   );
 }

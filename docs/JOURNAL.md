@@ -9,6 +9,9 @@
 
 ## Historical Log
 
+### 2026-04-19 (session 5)
+- Removed the final "Ready to build something that wins?" CTA section from homepage — redundant after the email capture band.
+
 ### 2026-04-19 (session 4)
 - Applied first round of Carol's copy feedback across the entire site.
 - Homepage: fixed "Arkansas's" → "Arkansas'"; removed AI-looking em dash patterns; Sound Familiar cards flipped to first person; follow-up paragraph rewritten to "biggest hurdle is putting a plan together — that's where we come in."
