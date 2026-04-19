@@ -25,10 +25,10 @@ export default function IntakeForm() {
       if (res.ok) {
         setSubmitted(true);
       } else {
-        setError('Something went wrong. Please try again or email Carol directly.');
+        setError('Something went wrong. Please try again or email Carol directly at carolyvella@gmail.com.');
       }
     } catch {
-      setError('Something went wrong. Please try again or email Carol directly.');
+      setError('Something went wrong. Please try again or email Carol directly at carolyvella@gmail.com.');
     } finally {
       setLoading(false);
     }
@@ -68,12 +68,12 @@ export default function IntakeForm() {
             <input name="email" type="email" required className={inputClass} />
           </div>
           <div>
-            <label className="label-tag block mb-2">Phone (optional)</label>
-            <input name="phone" type="tel" className={inputClass} />
+            <label className="label-tag block mb-2">Phone *</label>
+            <input name="phone" type="tel" required className={inputClass} />
           </div>
           <div className="md:col-span-2">
-            <label className="label-tag block mb-2">City / County</label>
-            <input name="location" placeholder="e.g. Little Rock, Pulaski County" className={inputClass} />
+            <label className="label-tag block mb-2">City / County *</label>
+            <input name="location" placeholder="e.g. Little Rock, Pulaski County" required className={inputClass} />
           </div>
         </div>
       </div>
@@ -83,8 +83,8 @@ export default function IntakeForm() {
         <h3 className="font-serif text-navy text-xl mb-6 pb-3 border-b border-navy/10">About Your Race</h3>
         <div className="grid md:grid-cols-2 gap-5">
           <div>
-            <label className="label-tag block mb-2">Office you&apos;re running for *</label>
-            <select name="office" required className={selectClass}>
+            <label className="label-tag block mb-2">Office you&apos;re running for</label>
+            <select name="office" className={selectClass}>
               <option value="">Select one</option>
               <option>City Council</option>
               <option>School Board</option>
