@@ -1,33 +1,13 @@
 import type { Metadata } from "next";
 import WinNumberCalculator from "@/components/WinNumberCalculator";
 import FundraisingEstimator from "@/components/FundraisingEstimator";
+import GatedResources from "@/components/GatedResources";
 
 export const metadata: Metadata = {
   title: "Free Resources | Blueprint Political",
   description:
     "Free tools and guides for first-time Arkansas candidates: readiness checklist, campaign finance guide, fundraising scripts, win number calculator, and fundraising estimator.",
 };
-
-const gatedResources = [
-  {
-    title: "First-Time Candidate Readiness Checklist",
-    desc: "10 things every candidate should have in place before they announce. Most first-timers skip half of these and feel it later. Download it free.",
-    cta: "Send Me the Checklist →",
-    name: "checklist",
-  },
-  {
-    title: "Arkansas Campaign Finance: What You Need to Know Before You File",
-    desc: "Filing deadlines, disclosure requirements, common mistakes that trip up first-timers, and what to do before you open your campaign account. Arkansas-specific, plain English.",
-    cta: "Send Me the Guide →",
-    name: "finance_guide",
-  },
-  {
-    title: "Call Time Script Starter Pack: How to Ask for Money Without Feeling Weird About It",
-    desc: "The exact scripts, language, and frameworks I use to coach candidates on their first donor calls. Including what to say when someone asks \"what's the money for?\" and how to handle a soft no.",
-    cta: "Send Me the Scripts →",
-    name: "scripts",
-  },
-];
 
 export default function ResourcesPage() {
   return (
@@ -48,34 +28,7 @@ export default function ResourcesPage() {
       <section className="py-16 bg-white">
         <div className="max-w-6xl mx-auto px-6">
           <p className="label-tag mb-8">Free Guides (email required)</p>
-          <div className="grid md:grid-cols-3 gap-6">
-            {gatedResources.map((r, i) => (
-              <div key={i} className="border border-navy/10 rounded p-6 flex flex-col">
-                <h2 className="font-serif text-navy text-lg leading-snug mb-3">{r.title}</h2>
-                <p className="font-sans text-text-muted text-sm leading-relaxed mb-6 flex-1">{r.desc}</p>
-                {/* TODO: wire up to email capture service — send PDF to submitted email */}
-                <form className="space-y-3">
-                  <input
-                    type="hidden"
-                    name="resource"
-                    value={r.name}
-                  />
-                  <input
-                    type="email"
-                    placeholder="Your email address"
-                    required
-                    className="w-full border border-navy/20 rounded px-4 py-3 font-sans text-sm focus:outline-none focus:border-amber bg-white"
-                  />
-                  <button
-                    type="submit"
-                    className="w-full bg-amber text-white font-sans font-semibold px-5 py-3 rounded hover:bg-amber/90 transition-colors text-sm"
-                  >
-                    {r.cta}
-                  </button>
-                </form>
-              </div>
-            ))}
-          </div>
+          <GatedResources />
         </div>
       </section>
 

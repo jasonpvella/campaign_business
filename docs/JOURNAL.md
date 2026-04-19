@@ -2,12 +2,26 @@
 
 ## Executive Snapshot
 
-**Current focus:** First round of copy feedback from Carol applied site-wide. Tone, voice, and brand language refined.
+**Current focus:** Gated resource forms wired up — email capture on checklist/guide/scripts cards now notifies Carol on every submission via Resend.
 **Next session priorities:** New bio from Carol to replace about page placeholder. Define Critical Rules in CLAUDE.md. Establish data model and begin feature work.
+
+**Open TODOs:**
+- Verify custom domain in Resend → swap `from` address to `noreply@blueprintpolitical.com` (currently using `onboarding@resend.dev`)
+- Auto-email PDFs to resource requesters once PDFs exist (checklist, finance guide, scripts)
 
 ---
 
 ## Historical Log
+
+### 2026-04-19 (session 8)
+- Wired up gated resource forms (checklist, finance guide, scripts) on /resources with Resend email notifications.
+- Created `GatedResources.tsx` client component — per-card independent state: idle → loading → success (green confirmation) or error.
+- Created `/api/resource-request` API route — POSTs to Resend, emails carolyvella@gmail.com with submitter email + resource name on every submission.
+- Installed `resend` package; RESEND_API_KEY added to Vercel project env vars.
+- From field: `onboarding@resend.dev` (sandbox). TODO: verify custom domain → swap to `noreply@blueprintpolitical.com`.
+- TODO: auto-email PDFs to submitters once PDFs exist.
+- Rule established: Carol always gets notified of every resource request, regardless of whether a PDF is sent.
+- Confirmed IntakeForm already shows success screen ("You're in.") on submission — no change needed.
 
 ### 2026-04-19 (session 7)
 - Removed all em dash sentence breaks site-wide (page, about, services, pricing, resources, work-with-me, IntakeForm). Replaced with periods, commas, or colons depending on context.
