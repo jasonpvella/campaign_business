@@ -42,7 +42,7 @@ export default function IntakeForm() {
       <div className="text-center py-16">
         <h2 className="font-serif text-navy text-4xl mb-4">You&apos;re in.</h2>
         <p className="font-sans text-text-muted text-lg max-w-md mx-auto leading-relaxed">
-          Carol will review your application and reach out within 2 business days. Keep an eye on your inbox. In the meantime — go talk to someone you trust about why you want to run. That clarity will make our first conversation a lot better.
+          We&apos;ll review your inquiry and reach out within 2 business days. Keep an eye on your inbox. In the meantime, go talk to someone you trust about why you want to run. That clarity will make our first conversation a lot better.
         </p>
       </div>
     );

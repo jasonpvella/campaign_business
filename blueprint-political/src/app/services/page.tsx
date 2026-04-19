@@ -4,14 +4,14 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Services | Blueprint Political",
   description:
-    "Carol Vella builds the full campaign infrastructure for first-time Arkansas candidates — strategy, fundraising, operations, accountability, and volunteer systems.",
+    "Carol Vella builds the full campaign infrastructure for first-time Arkansas candidates: strategy, fundraising, operations, accountability, and volunteer systems.",
 };
 
 const services = [
   {
     tag: "Weeks 1–3",
     name: "Your Campaign Blueprint",
-    body: "This is where we start — and it's the foundation everything else is built on. In the first three weeks, you'll walk away with a complete written Campaign Blueprint that covers:",
+    body: "This is where we start. It's the foundation everything else is built on. In the first three weeks, you'll walk away with a complete written Campaign Blueprint that covers:",
     bullets: [
       "Timeline from today to Election Day",
       "Win strategy and path to 50% + 1",
@@ -26,15 +26,15 @@ const services = [
   {
     tag: "Ongoing",
     name: "Your Fundraising Engine",
-    body: "This is the part most candidates dread — and the part where we can make the biggest difference. Fundraising is not about asking for money. It's about structure, math, and discipline. We build:",
+    body: "This is the part most candidates dread, and where we can make the biggest difference. Fundraising is not about asking for money. It's about structure, math, and discipline. We build:",
     bullets: [
       "A finance plan (how much to raise and exactly where it comes from)",
       "Donor targeting and segmentation",
-      "Call time structure and coaching — including what to say, how to ask, and how to handle the hard conversations",
+      "Call time structure and coaching: what to say, how to ask, and how to handle the hard conversations",
       "Event strategy (house parties, small events, digital fundraisers)",
       "Weekly tracking and accountability",
     ],
-    closing: "You will never wonder whether you're on pace. You'll know — every single week.",
+    closing: "You will never wonder whether you're on pace. You'll know. Every single week.",
     deliverable: "Weekly call time plan, monthly fundraising goals dashboard",
   },
   {
@@ -54,7 +54,7 @@ const services = [
   {
     tag: "Ongoing",
     name: "Your Campaign Operations",
-    body: "Someone has to be the general contractor — tracking every moving piece and making sure they fit together. That's us.",
+    body: "Someone has to be the general contractor: tracking every moving piece and making sure they fit together. That's us.",
     bullets: [
       "Build and manage the master campaign calendar",
       "Coordinate vendors (digital, mail, field, data, etc.)",
@@ -83,7 +83,7 @@ const addOns = [
   {
     name: "Campaign Launch Sprint",
     tag: "2 weeks · flat fee",
-    desc: "For candidates still deciding whether to run, or who need to move fast. A compressed version of the Campaign Blueprint process — filing research, win number, messaging, and a 30-day action plan.",
+    desc: "For candidates still deciding whether to run, or who need to move fast. A compressed version of the Campaign Blueprint process: filing research, win number, messaging, and a 30-day action plan.",
   },
   {
     name: "Fundraising Intensive",
@@ -93,7 +93,7 @@ const addOns = [
   {
     name: "Volunteer Activation Boost",
     tag: "Short-term",
-    desc: "A short-term grassroots push — recruitment, onboarding, and a 2-week activation sprint when you need bodies on the ground fast.",
+    desc: "A short-term grassroots push: recruitment, onboarding, and a 2-week activation sprint when you need bodies on the ground fast.",
   },
 ];
 
@@ -107,12 +107,12 @@ export default function ServicesPage() {
             Your campaign. Fully built.
           </h1>
           <p className="font-sans text-text-muted text-xl mb-6 max-w-2xl leading-relaxed">
-            We don&apos;t just advise — we build the infrastructure, own the plan, and keep you accountable
+            We don&apos;t just advise. We build the infrastructure, own the plan, and keep you accountable
             from your first announcement to your final vote count.
           </p>
           <p className="font-sans text-text-muted text-base max-w-2xl leading-relaxed">
             Most political consultants hand you a strategy deck and wish you luck. That&apos;s not how we work.
-            We stay in it with you — building the systems, making the calls, coordinating the pieces, and
+            We stay in it with you: building the systems, making the calls, coordinating the pieces, and
             making sure nothing falls through the cracks. Think of us as your campaign&apos;s general contractor.
           </p>
         </div>
@@ -156,7 +156,7 @@ export default function ServicesPage() {
           <div>
             <p className="label-tag mb-4">What We Coordinate (Not Execute)</p>
             <p className="font-sans text-text-muted text-base leading-relaxed mb-6">
-              We stay the quarterback — which means we bring in the right specialists and make sure they&apos;re
+              We stay the quarterback. We bring in the right specialists and make sure they&apos;re
               delivering, but we don&apos;t try to do everything ourselves. Vendors we coordinate on your behalf:
             </p>
             <ul className="space-y-2">
@@ -168,7 +168,7 @@ export default function ServicesPage() {
               ))}
             </ul>
             <blockquote className="mt-6 border-l-4 border-amber pl-4 font-serif text-navy text-lg">
-              &ldquo;You get one person who owns the outcome — not five consultants pointing fingers at each other.&rdquo;
+              &ldquo;You get one team that owns the outcome. Not five consultants pointing fingers at each other.&rdquo;
             </blockquote>
           </div>
           <div>
@@ -190,7 +190,7 @@ export default function ServicesPage() {
               ))}
             </ul>
             <p className="font-sans text-text-muted text-sm mt-4 leading-relaxed">
-              These are specialist services we can help you find and coordinate — but they&apos;re not in our lane to execute.
+              These are specialist services we can help you find and coordinate, but they&apos;re not in our lane to execute.
             </p>
           </div>
         </div>

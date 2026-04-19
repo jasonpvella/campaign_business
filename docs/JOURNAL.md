@@ -9,6 +9,9 @@
 
 ## Historical Log
 
+### 2026-04-19 (session 7)
+- Removed all em dash sentence breaks site-wide (page, about, services, pricing, resources, work-with-me, IntakeForm). Replaced with periods, commas, or colons depending on context.
+
 ### 2026-04-19 (session 6)
 - Increased label-tag (section subheaders like "Sound Familiar?") from 12px to 18px (text-lg) site-wide.
 

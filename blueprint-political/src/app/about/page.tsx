@@ -11,23 +11,23 @@ export const metadata: Metadata = {
 const credentials = [
   "5 campaigns supported across city council, school board, and county races",
   "[X] raised across client campaigns", // TODO: real number
-  "Arkansas-based — I know the donor landscape, the filing rules, and the local dynamics",
-  "Fundraising specialist — the part of campaigning most candidates fear most",
-  "Direct candidate access — you work with Carol, not an account manager",
+  "Arkansas-based. I know the donor landscape, the filing rules, and the local dynamics.",
+  "Fundraising specialist. The part of campaigning most candidates fear most.",
+  "Direct candidate access. You work with Carol, not an account manager.",
 ];
 
 const howIWork = [
   {
     title: "Small roster, full attention.",
-    body: "We take on a limited number of candidates per cycle — because every race deserves our full focus, not a template.",
+    body: "We take on a limited number of candidates per cycle. Every race deserves our full focus, not a template.",
   },
   {
     title: "You get Carol, not a junior staffer.",
-    body: "Every strategy call, every document, every fundraising review — that's Carol, not a team member you've never met.",
+    body: "Every strategy call, every document, every fundraising review. That's Carol, not a team member you've never met.",
   },
   {
     title: "We're the quarterback, not the specialist.",
-    body: "We coordinate your vendors (digital, mail, field, compliance) and stay the strategic owner throughout. You don't need to manage five different consultants — you need one team that owns the outcome.",
+    body: "We coordinate your vendors (digital, mail, field, compliance) and stay the strategic owner throughout. You don't need to manage five different consultants. You need one team that owns the outcome.",
   },
   {
     title: "Structured and honest.",
@@ -47,7 +47,7 @@ export default function AboutPage() {
             </h1>
             <p className="font-sans text-text-muted text-xl leading-relaxed">
               Arkansas campaign consultant. Fundraising specialist. The person who keeps your campaign on plan,
-              on pace, and on budget — from announcement to Election Day.
+              on pace, and on budget from announcement to Election Day.
             </p>
           </div>
           <div className="relative w-1/2 aspect-[480/579] rounded overflow-hidden">
@@ -67,7 +67,7 @@ export default function AboutPage() {
         <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-12">
           <div className="md:col-span-2 space-y-6">
             <p className="font-sans text-text-muted text-base md:text-lg leading-relaxed">
-              I&apos;ve watched a lot of first-time candidates walk into a race with everything it takes to win — a
+              I&apos;ve watched a lot of first-time candidates walk into a race with everything it takes to win: a
               real message, genuine community support, and the drive to see it through. And then lose. Not because
               they weren&apos;t good enough. But because nobody helped them build the infrastructure around those
               qualities.
@@ -75,12 +75,12 @@ export default function AboutPage() {
             <p className="font-sans text-text-muted text-base md:text-lg leading-relaxed">
               {/* TODO: Carol to fill in with her specific background details */}
               I&apos;ve worked on Arkansas campaigns at every level, with a particular focus on fundraising and
-              operations — the two places where most first-time candidates are the most lost and the most
+              operations. Those are the two places where most first-time candidates are most lost and most
               vulnerable. Across five campaigns, I&apos;ve helped candidates build finance plans, run call time,
               structure events, manage vendor relationships, and stay disciplined when the pressure mounts.
             </p>
             <p className="font-sans text-text-muted text-base md:text-lg leading-relaxed">
-              I&apos;m not a creative agency. I&apos;m not a pollster. I&apos;m the campaign quarterback — the one
+              I&apos;m not a creative agency. I&apos;m not a pollster. I&apos;m the campaign quarterback: the one
               who builds the plan, sets the calendar, holds the team accountable, and makes sure every dollar and
               every hour is moving you toward victory. We work with a small number of candidates at a time so that
               every client gets our full attention, not a handoff to someone junior.

@@ -41,14 +41,14 @@ const packages = [
   },
   {
     name: "Build Your Package",
-    price: "Custom — built around your race",
+    price: "Custom. Built around your race.",
     duration: "Scope and timeline tailored to you",
-    bestFor: "Candidates who don't fit a standard tier — larger races, unique timelines, or specific gaps where you need targeted support, not a pre-packaged plan.",
+    bestFor: "Candidates who don't fit a standard tier: larger races, unique timelines, or specific gaps where you need targeted support, not a pre-packaged plan.",
     includes: [
       "Choose the services your race actually needs",
       "Mix strategy, fundraising, operations, or all three",
       "Flexible engagement length",
-      "Priced after a free strategy call — no guessing",
+      "Priced after a free strategy call. No guessing.",
     ],
     note: "No two campaigns are the same. We'll scope exactly what you need and nothing you don't.",
     cta: "Let's Build It →",
@@ -58,35 +58,35 @@ const packages = [
 const faqs = [
   {
     q: "When should I hire a campaign consultant?",
-    a: "As early as possible — ideally 4–6 months before your election. The sooner you have a plan and a fundraising engine, the better your odds. That said, if your election is 8 weeks away and you're behind, I'd rather help you now than not at all. Reach out and let's assess the situation.",
+    a: "As early as possible, ideally 4–6 months before your election. The sooner you have a plan and a fundraising engine, the better your odds. That said, if your election is 8 weeks away and you're behind, we'd rather help you now than not at all. Reach out and let's assess the situation.",
   },
   {
     q: "Is $1,000/month realistic for a school board race?",
-    a: "Yes — and it's designed to be. School board and small city council races in Arkansas don't have massive budgets, and I built the Foundation package specifically for that reality. The goal is to get you real, structured support without pricing you out of it.",
+    a: "Yes, and it's designed to be. School board and small city council races in Arkansas don't have massive budgets, and we built the Foundation package specifically for that reality. The goal is to get you real, structured support without pricing you out of it.",
   },
   {
     q: "What if I can't afford full campaign support?",
-    a: "The Launch Sprint at $750 flat is a great starting point. You'll walk away with a campaign blueprint, a win number, and a 30-day plan — which is more than most first-time candidates have. From there, you can decide whether to continue.",
+    a: "The Launch Sprint at $750 flat is a great starting point. You'll walk away with a campaign blueprint, a win number, and a 30-day plan. That's more than most first-time candidates have. From there, you can decide whether to continue.",
   },
   {
     q: "Do you take a percentage of what I raise?",
-    a: "No. I charge a flat monthly fee, not a percentage of fundraising. Taking a cut of what a candidate raises is considered bad practice in the industry — and frankly, I think it misaligns incentives. My job is to help you raise what your race requires, not to maximize my fee.",
+    a: "No. We charge a flat monthly fee, not a percentage of fundraising. Taking a cut of what a candidate raises is considered bad practice in the industry. Frankly, it misaligns incentives. Our job is to help you raise what your race requires, not to maximize our fee.",
   },
   {
     q: "How many clients do you take at once?",
-    a: "A small number — intentionally. I don't run a high-volume operation. When you're a Blueprint Political client, you get my full attention, not a junior staffer on email.",
+    a: "A small number, intentionally. We don't run a high-volume operation. When you're a Blueprint Political client, you get our full attention, not a junior staffer on email.",
   },
   {
     q: "Do you work with candidates outside Arkansas?",
-    a: "Arkansas is our primary focus, but yes — we work with candidates from other states on a case-by-case basis, particularly for fundraising strategy and campaign planning. Reach out and let's talk.",
+    a: "Arkansas is our primary focus, but yes, we work with candidates from other states on a case-by-case basis, particularly for fundraising strategy and campaign planning. Reach out and let's talk.",
   },
   {
     q: "What if I haven't decided to run yet?",
-    a: "That's fine. The Launch Sprint is actually perfect for this moment — it helps you figure out whether running makes sense, what it would take to be competitive, and what your first 30 days would look like if you did.",
+    a: "That's fine. The Launch Sprint is actually perfect for this moment. It helps you figure out whether running makes sense, what it would take to be competitive, and what your first 30 days would look like if you did.",
   },
   {
     q: "What's the difference between the Launch Sprint and full campaign support?",
-    a: "The Launch Sprint is a one-time, flat-fee deliverable — a blueprint and a plan, delivered in two weeks, with no ongoing commitment. Full campaign support is a monthly engagement where I stay in it with you, building systems, coaching fundraising, and managing operations all the way to Election Day.",
+    a: "The Launch Sprint is a one-time, flat-fee deliverable: a blueprint and a plan, delivered in two weeks, with no ongoing commitment. Full campaign support is a monthly engagement where we stay in it with you, building systems, coaching fundraising, and managing operations all the way to Election Day.",
   },
 ];
 
@@ -101,7 +101,7 @@ export default function PricingPage() {
           </h1>
           <p className="font-sans text-text-muted text-xl max-w-xl leading-relaxed">
             Most political consultants won&apos;t tell you what they charge until you&apos;re already on a call.
-            We believe you deserve to know what you&apos;re investing — before we ever talk.
+            We believe you deserve to know what you&apos;re investing before we ever talk.
           </p>
         </div>
       </section>
@@ -162,7 +162,7 @@ export default function PricingPage() {
               },
               {
                 name: "Volunteer Activation Boost",
-                desc: "Short-term grassroots push — recruitment, onboarding, and a 2-week activation sprint.",
+                desc: "Short-term grassroots push: recruitment, onboarding, and a 2-week activation sprint.",
               },
             ].map((a, i) => (
               <div key={i} className="bg-white border border-navy/10 rounded p-6">
@@ -197,7 +197,7 @@ export default function PricingPage() {
         <div className="max-w-6xl mx-auto px-6">
           <h2 className="font-serif text-cream text-3xl mb-3">Not sure which is right for you?</h2>
           <p className="font-sans text-cream/70 text-base mb-8">
-            Let&apos;s figure it out together. The strategy call is free — and there&apos;s no commitment.
+            Let&apos;s figure it out together. The strategy call is free. No commitment.
           </p>
           <Link
             href="/work-with-me"

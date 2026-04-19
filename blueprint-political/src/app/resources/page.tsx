@@ -5,13 +5,13 @@ import FundraisingEstimator from "@/components/FundraisingEstimator";
 export const metadata: Metadata = {
   title: "Free Resources | Blueprint Political",
   description:
-    "Free tools and guides for first-time Arkansas candidates — readiness checklist, campaign finance guide, fundraising scripts, win number calculator, and fundraising estimator.",
+    "Free tools and guides for first-time Arkansas candidates: readiness checklist, campaign finance guide, fundraising scripts, win number calculator, and fundraising estimator.",
 };
 
 const gatedResources = [
   {
     title: "First-Time Candidate Readiness Checklist",
-    desc: "10 things every candidate should have in place before they announce. Most first-timers skip half of these — and feel it later. Download it free.",
+    desc: "10 things every candidate should have in place before they announce. Most first-timers skip half of these and feel it later. Download it free.",
     cta: "Send Me the Checklist →",
     name: "checklist",
   },
@@ -91,7 +91,7 @@ export default function ResourcesPage() {
               <h2 className="font-serif text-navy text-2xl mb-2">Win Number Calculator</h2>
               <p className="font-sans text-text-muted text-sm leading-relaxed mb-6">
                 Enter your district&apos;s last comparable election turnout and the number of candidates in your
-                race. Get your win number — the exact votes you need to win — plus suggested door-knock and phone
+                race. Get your win number (the exact votes you need to win) plus suggested door-knock and phone
                 call targets.
               </p>
               <WinNumberCalculator />

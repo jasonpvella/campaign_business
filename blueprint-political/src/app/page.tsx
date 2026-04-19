@@ -5,7 +5,7 @@ import Image from "next/image";
 export const metadata: Metadata = {
   title: "Blueprint Political | Arkansas Campaign Consultant for First-Time Candidates",
   description:
-    "Carol Vella helps first-time Arkansas candidates build campaigns that win. Strategy, fundraising, and operations — all in one.",
+    "Carol Vella helps first-time Arkansas candidates build campaigns that win. Strategy, fundraising, and operations. All in one.",
 };
 
 const services = [
@@ -40,7 +40,7 @@ const steps = [
   {
     n: "02",
     title: "Strategy Call",
-    desc: "A free 30-minute conversation. No pressure — just a talk about your race and whether we're a fit.",
+    desc: "A free 30-minute conversation. No pressure. Just a talk about your race and whether we're a fit.",
   },
   {
     n: "03",
@@ -104,7 +104,7 @@ export default function Home() {
           <p className="label-tag mb-10">Sound Familiar?</p>
           <div className="grid md:grid-cols-3 gap-6 mb-10">
             {[
-              "I know I want to run — but I have no idea where to start.",
+              "I know I want to run, but I have no idea where to start.",
               "Fundraising feels awkward. I don't know how to ask, who to ask, or how much.",
               "I'm terrified of making a costly mistake that sinks the whole thing.",
             ].map((text, i) => (
@@ -184,8 +184,8 @@ export default function Home() {
             </blockquote>
             <p className="font-sans text-text-muted text-base leading-relaxed mb-4">
               I&apos;m Carol Vella. I&apos;ve spent my career in Arkansas politics, and I&apos;ve watched too many
-              good candidates lose races they should have won — because they didn&apos;t have structure, didn&apos;t
-              have a fundraising plan, or didn&apos;t have anyone keeping them honest.
+              good candidates lose races they should have won. Not because they weren&apos;t good enough. Because
+              they didn&apos;t have structure, a fundraising plan, or anyone keeping them honest.
             </p>
             <p className="font-sans text-text-muted text-base leading-relaxed mb-6">
               Blueprint Political exists to fix that.
@@ -204,7 +204,7 @@ export default function Home() {
             Not sure if you&apos;re ready to run? Start here.
           </h2>
           <p className="font-sans text-amber text-base mb-8">
-            Download the First-Time Candidate Readiness Checklist — 10 things to have in place before you
+            Download the First-Time Candidate Readiness Checklist: 10 things to have in place before you
             announce. Free.
           </p>
           {/* TODO: wire up to email capture service */}

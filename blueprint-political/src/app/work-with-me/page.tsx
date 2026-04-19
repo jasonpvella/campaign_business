@@ -20,7 +20,7 @@ export default function WorkWithMePage() {
             Fill out the form below. We review every inquiry personally and follow up within 2 business days.
           </p>
           <p className="font-sans text-text-muted text-sm">
-            There&apos;s no commitment in reaching out — just a conversation.
+            There&apos;s no commitment in reaching out. Just a conversation.
           </p>
         </div>
       </section>
