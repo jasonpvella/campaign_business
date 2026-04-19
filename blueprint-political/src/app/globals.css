@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #F5F2EC;
+  --foreground: #1A1A1A;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+}
+
+@layer utilities {
+  .blueprint-grid {
+    background-image:
+      linear-gradient(rgba(27, 42, 59, 0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(27, 42, 59, 0.04) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+
+  .label-tag {
+    @apply text-amber text-xs font-sans font-semibold tracking-widest uppercase;
+  }
+}
