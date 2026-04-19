@@ -39,6 +39,7 @@ When Jason says "Save Project":
 2. Rewrite `## Executive Snapshot` in `docs/JOURNAL.md` — current focus + next session priorities.
 3. Append a dated `### YYYY-MM-DD` entry to `## Historical Log` with the session delta (decisions, what changed, what's next).
 4. From repo root: `git add -A && git commit -m "chore: save project $(date +%Y-%m-%d)" && git push`
+5. From `blueprint-political/`: `npx vercel --prod` to deploy the latest to production.
 
 ---
 
