@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Pricing | Blueprint Political",
   description:
-    "Transparent campaign consulting pricing from Blueprint Political. Launch Sprint from $1,500. Foundation from $1,000/month. Full Campaign from $2,000/month.",
+    "Transparent campaign consulting pricing from Blueprint Political. Launch Sprint at $750 flat. Foundation from $1,000/month. Custom packages built around your race.",
 };
 
 const packages = [
@@ -22,6 +22,7 @@ const packages = [
       "One strategy call",
     ],
     note: "No ongoing commitment. Flat fee, delivered in 2 weeks.",
+    cta: "Apply for This Package →",
   },
   {
     name: "Foundation",
@@ -36,21 +37,21 @@ const packages = [
       "Vendor coordination",
     ],
     note: "Final scope and rate set in your strategy call based on race size and timeline.",
+    cta: "Apply for This Package →",
   },
   {
-    name: "Full Campaign",
-    price: "Starting at $2,000/month",
-    duration: "Typically 4–6 months",
-    bestFor: "City council, county office, or mayor's races where you need full operational support through Election Day.",
+    name: "Build Your Package",
+    price: "Custom — built around your race",
+    duration: "Scope and timeline tailored to you",
+    bestFor: "Candidates who don't fit a standard tier — larger races, unique timelines, or specific gaps where you need targeted support, not a pre-packaged plan.",
     includes: [
-      "Everything in Foundation, plus:",
-      "Weekly strategy calls (not bi-weekly)",
-      "Volunteer system build-out",
-      "Event strategy and execution support",
-      "Full weekly accountability and reporting",
-      "Direct access to Carol for urgent decisions",
+      "Choose the services your race actually needs",
+      "Mix strategy, fundraising, operations, or all three",
+      "Flexible engagement length",
+      "Priced after a free strategy call — no guessing",
     ],
-    note: "Final scope and rate set in your strategy call.",
+    note: "No two campaigns are the same. We'll scope exactly what you need and nothing you don't.",
+    cta: "Let's Build It →",
   },
 ];
 
@@ -137,7 +138,7 @@ export default function PricingPage() {
                   href="/work-with-me"
                   className="block text-center bg-amber text-white font-sans font-semibold px-5 py-3 rounded hover:bg-amber/90 transition-colors"
                 >
-                  Apply for This Package →
+                  {pkg.cta}
                 </Link>
               </div>
             </div>

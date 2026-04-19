@@ -2,7 +2,7 @@
 
 ## Executive Snapshot
 
-**Current focus:** IntakeForm fully operational. Formspree wired to carolyvella@gmail.com via verified form ID.
+**Current focus:** Nav and Pricing page polish. Home link added to nav; "Full Campaign" tier replaced with flexible "Build Your Package" option.
 **Next session priorities:** Define Critical Rules in CLAUDE.md. Establish data model and begin feature work.
 
 ---
@@ -17,6 +17,11 @@
 - Fixed IntakeForm error message to include Carol's email (`carolyvella@gmail.com`).
 - Updated required fields: Phone and City/County now required; Office downgraded to optional. Top 5 fields (First Name, Last Name, Email, Phone, City/County) are the only mandatory fields.
 - Identified root cause of submission error: Formspree legacy endpoint requires Carol to click a one-time "Confirm Form" verification link in her inbox before submissions go through.
+
+### 2026-04-19 (session 3)
+- Added "Home" as first nav link in `Nav.tsx`, pointing to `/`.
+- Replaced "Full Campaign" pricing tier with "Build Your Package" — no fixed price, custom CTA ("Let's Build It →"), copy emphasizes flexibility and tailored scoping.
+- Updated pricing page meta description to remove "Full Campaign from $2,000/month".
 
 ### 2026-04-19 (session 2)
 - Replaced legacy Formspree endpoint (`formspree.io/carolyvella@gmail.com`) with verified form ID (`formspree.io/f/mwvaqepn`). Verification email never arrived so legacy endpoint was non-functional.
