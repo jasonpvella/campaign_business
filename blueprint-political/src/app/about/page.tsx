@@ -19,19 +19,19 @@ const credentials = [
 const howIWork = [
   {
     title: "Small roster, full attention.",
-    body: "I take on a limited number of candidates per cycle — because every race deserves my real focus, not a template.",
+    body: "We take on a limited number of candidates per cycle — because every race deserves our full focus, not a template.",
   },
   {
-    title: "You get me, not a junior staffer.",
+    title: "You get Carol, not a junior staffer.",
     body: "Every strategy call, every document, every fundraising review — that's Carol, not a team member you've never met.",
   },
   {
-    title: "I'm the quarterback, not the specialist.",
-    body: "I coordinate your vendors (digital, mail, field, compliance) and stay the strategic owner throughout. You don't need to manage five different consultants — you need one person who owns the outcome.",
+    title: "We're the quarterback, not the specialist.",
+    body: "We coordinate your vendors (digital, mail, field, compliance) and stay the strategic owner throughout. You don't need to manage five different consultants — you need one team that owns the outcome.",
   },
   {
     title: "Structured and honest.",
-    body: "If your timeline is unrealistic, I'll tell you. If your fundraising ask is too low, I'll push you. If a vendor isn't performing, I'll flag it. That's the job.",
+    body: "If your timeline is unrealistic, we'll tell you. If your fundraising ask is too low, we'll push you. If a vendor isn't performing, we'll flag it. That's the job.",
   },
 ];
 
@@ -82,14 +82,14 @@ export default function AboutPage() {
             <p className="font-sans text-text-muted text-base md:text-lg leading-relaxed">
               I&apos;m not a creative agency. I&apos;m not a pollster. I&apos;m the campaign quarterback — the one
               who builds the plan, sets the calendar, holds the team accountable, and makes sure every dollar and
-              every hour is moving you toward victory. I work with a small number of candidates at a time so that
-              every client gets my full attention, not a handoff to someone junior.
+              every hour is moving you toward victory. We work with a small number of candidates at a time so that
+              every client gets our full attention, not a handoff to someone junior.
             </p>
             <p className="font-sans text-text-muted text-base md:text-lg leading-relaxed">
               Arkansas has no shortage of people who want to serve their communities. What it lacks is accessible,
               structured support for the candidates who aren&apos;t connected to political infrastructure yet.
-              That&apos;s who I built Blueprint Political for. If you&apos;re a first-time candidate who is serious
-              about winning, I want to help you do exactly that.
+              That&apos;s who we built Blueprint Political for. If you&apos;re a first-time candidate who is serious
+              about winning, we want to help you do exactly that.
             </p>
           </div>
 
@@ -111,9 +111,9 @@ export default function AboutPage() {
       {/* How I Work */}
       <section className="py-20 bg-cream">
         <div className="max-w-6xl mx-auto px-6">
-          <p className="label-tag mb-4">How I Work</p>
+          <p className="label-tag mb-4">How We Work</p>
           <h2 className="font-serif text-navy text-3xl md:text-4xl mb-10">
-            What working with me actually looks like
+            What working with us actually looks like
           </h2>
           <div className="grid md:grid-cols-2 gap-8">
             {howIWork.map((item, i) => (
@@ -137,13 +137,13 @@ export default function AboutPage() {
         <div className="max-w-6xl mx-auto px-6">
           <h2 className="font-serif text-cream text-3xl md:text-4xl mb-3">Want to work together?</h2>
           <p className="font-sans text-cream/70 text-lg mb-8">
-            Applications are open. Let&apos;s find out if we&apos;re a fit.
+            Inquiries are open. Let&apos;s find out if we&apos;re a fit.
           </p>
           <Link
             href="/work-with-me"
             className="bg-amber text-white font-sans font-semibold px-8 py-4 rounded text-lg hover:bg-amber/90 transition-colors inline-block"
           >
-            Apply Now →
+            Inquire Now →
           </Link>
         </div>
       </section>

@@ -16,15 +16,18 @@ export default function Footer() {
             <Link href="/resources" className="text-sm hover:text-cream transition-colors">Resources</Link>
             <Link href="/work-with-me" className="text-sm hover:text-cream transition-colors">Work With Me</Link>
           </nav>
-          <div className="text-sm">
-            <a href="mailto:carolyvella@gmail.com" className="hover:text-cream transition-colors">
+          <div className="text-sm space-y-2">
+            <a href="mailto:carolyvella@gmail.com" className="block hover:text-cream transition-colors">
               carolyvella@gmail.com
+            </a>
+            <a href="tel:9173637009" className="block hover:text-cream transition-colors">
+              917-363-7009
             </a>
           </div>
         </div>
         <div className="border-t border-cream/10 pt-6 text-xs text-cream/40 space-y-1">
-          <p>Blueprint Political is an Arkansas-based political consulting practice. Carol Vella works with Democratic, independent, and nonpartisan candidates.</p>
-          <p>© 2025 Blueprint Political</p>
+          <p>Blueprint Political is an Arkansas-based political consulting practice, supporting candidates nation wide.</p>
+          <p>© 2026 Blueprint Political</p>
         </div>
       </div>
     </footer>

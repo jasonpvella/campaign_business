@@ -11,19 +11,19 @@ export const metadata: Metadata = {
 const services = [
   {
     name: "Your Campaign Blueprint",
-    desc: "A full roadmap from announcement to Election Day — strategy, messaging, budget, and path to victory. All in writing. All yours.",
+    desc: "A full roadmap from announcement to Election Day: strategy, messaging, budget, and path to victory. All in writing. All yours.",
   },
   {
     name: "Your Fundraising Engine",
-    desc: "This is where most campaigns fail. I build your finance plan, coach your call time, structure your events, and track progress every week.",
+    desc: "This is where most campaigns fail. We build your finance plan, coach your call time, structure your events, and track progress every week.",
   },
   {
     name: "Your Weekly Accountability",
-    desc: "Strategy calls, schedule guidance, decision support, and message coaching — every week, so you never wonder what to do next.",
+    desc: "Strategy calls, schedule guidance, decision support, and message coaching. Every week, so you never wonder what to do next.",
   },
   {
     name: "Your Campaign Operations",
-    desc: "I'm the general contractor. I manage your calendar, coordinate vendors, track milestones, and keep everything moving toward Election Day.",
+    desc: "We manage your calendar, coordinate vendors, track milestones, and keep everything moving toward Election Day.",
   },
   {
     name: "Your Volunteer System",
@@ -34,18 +34,18 @@ const services = [
 const steps = [
   {
     n: "01",
-    title: "Apply",
-    desc: "Fill out a short intake form so I can learn about your race, your timeline, and what you need most.",
+    title: "Inquire",
+    desc: "Fill out a short intake form so we can learn about your race, your timeline, and what you need most.",
   },
   {
     n: "02",
     title: "Strategy Call",
-    desc: "A free 30-minute conversation. No pressure, no pitch — just an honest assessment of your race and whether we're a fit.",
+    desc: "A free 30-minute conversation. No pressure — just a talk about your race and whether we're a fit.",
   },
   {
     n: "03",
     title: "Campaign Blueprint",
-    desc: "In the first three weeks, you'll have a complete written campaign plan: timeline, win strategy, fundraising targets, messaging framework, and budget.",
+    desc: "In the first week, you'll have a complete written campaign plan: timeline, win strategy, fundraising targets, messaging framework, and budget.",
   },
   {
     n: "04",
@@ -66,8 +66,8 @@ export default function Home() {
               Now let&apos;s build a campaign that wins.
             </h1>
             <p className="font-sans text-text-muted text-lg md:text-xl mb-8 leading-relaxed">
-              Arkansas&apos;s dedicated campaign consultant for first-time candidates.
-              Strategy. Fundraising. Operations. All of it — built around you.
+              Arkansas&apos; dedicated campaign consultant for first-time candidates.
+              Strategy. Fundraising. Operations. All made simple.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link
@@ -104,9 +104,9 @@ export default function Home() {
           <p className="label-tag mb-10">Sound Familiar?</p>
           <div className="grid md:grid-cols-3 gap-6 mb-10">
             {[
-              "You know you want to run — but you have no idea where to start.",
-              "Fundraising feels awkward. You don't know how to ask, who to ask, or how much.",
-              "You're terrified of making a costly mistake that sinks the whole thing.",
+              "I know I want to run — but I have no idea where to start.",
+              "Fundraising feels awkward. I don't know how to ask, who to ask, or how much.",
+              "I'm terrified of making a costly mistake that sinks the whole thing.",
             ].map((text, i) => (
               <div key={i} className="border border-navy/10 rounded p-6">
                 <p className="font-serif text-navy text-xl leading-snug">&ldquo;{text}&rdquo;</p>
@@ -114,9 +114,8 @@ export default function Home() {
             ))}
           </div>
           <p className="font-sans text-text-muted text-base md:text-lg max-w-2xl leading-relaxed">
-            Most first-time candidates don&apos;t lose because their message was wrong. They lose because they
-            didn&apos;t have a plan, a fundraising engine, or anyone keeping them accountable. That&apos;s exactly
-            what I fix.
+            The biggest hurdle for first-time candidates is putting a plan together and having an accountability
+            system. That&apos;s where we come in.
           </p>
         </div>
       </section>
@@ -126,7 +125,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto px-6">
           <p className="label-tag mb-4">The Blueprint</p>
           <h2 className="font-serif text-navy text-4xl md:text-5xl mb-12 leading-tight">
-            Five things every first-time<br />campaign needs. I build all of them.
+            Five things every first-time<br />campaign needs. We build all of them.
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
             {services.map((s, i) => (
@@ -142,42 +141,11 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Track Record */}
-      <section className="py-20 bg-navy text-cream">
-        <div className="max-w-6xl mx-auto px-6">
-          <p className="text-amber text-xs font-sans font-semibold tracking-widest uppercase mb-10">The Track Record</p>
-          <div className="grid md:grid-cols-4 gap-8 mb-16">
-            {[
-              { stat: "5", label: "Arkansas campaigns supported" },
-              { stat: "[X]", label: "raised across client campaigns" }, // TODO: real number
-              { stat: "AR", label: "Arkansas-based. Arkansas-focused." },
-              { stat: "1:1", label: "First-time candidate specialist" },
-            ].map((item, i) => (
-              <div key={i}>
-                <p className="font-serif text-5xl text-amber mb-2">{item.stat}</p>
-                <p className="font-sans text-cream/70 text-sm">{item.label}</p>
-              </div>
-            ))}
-          </div>
-          {/* TODO: replace with real testimonials from Carol */}
-          <div className="grid md:grid-cols-2 gap-8">
-            {[1, 2].map((n) => (
-              <div key={n} className="border border-cream/10 rounded p-6">
-                <p className="font-serif text-cream/40 italic text-base mb-4">
-                  &ldquo;[Testimonial from candidate — replace with real quote.]&rdquo;
-                </p>
-                <p className="font-sans text-cream/30 text-sm">— Name, Race, Year</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* How It Works */}
-      <section id="how-it-works" className="py-20 bg-cream">
+      <section id="how-it-works" className="py-20 bg-navy">
         <div className="max-w-6xl mx-auto px-6">
           <p className="label-tag mb-4">The Process</p>
-          <h2 className="font-serif text-navy text-4xl md:text-5xl mb-12 leading-tight">
+          <h2 className="font-serif text-cream text-4xl md:text-5xl mb-12 leading-tight">
             From &ldquo;I think I want to run&rdquo; to a fully-built campaign.<br />
             Here&apos;s how we get there.
           </h2>
@@ -185,8 +153,8 @@ export default function Home() {
             {steps.map((step) => (
               <div key={step.n}>
                 <p className="font-sans text-amber text-sm font-semibold tracking-widest mb-3">{step.n}</p>
-                <h3 className="font-serif text-navy text-xl mb-2">{step.title}</h3>
-                <p className="font-sans text-text-muted text-sm leading-relaxed">{step.desc}</p>
+                <h3 className="font-serif text-cream text-xl mb-2">{step.title}</h3>
+                <p className="font-sans text-cream/70 text-sm leading-relaxed">{step.desc}</p>
               </div>
             ))}
           </div>
@@ -212,8 +180,7 @@ export default function Home() {
           </div>
           <div>
             <blockquote className="font-serif text-navy text-2xl md:text-3xl leading-snug mb-6 border-l-4 border-amber pl-6">
-              &ldquo;I work with a small number of candidates at a time — because this work deserves full attention,
-              not a junior staffer on email.&rdquo;
+              &ldquo;I have run for office twice and my goal is to make it easier for you.&rdquo;
             </blockquote>
             <p className="font-sans text-text-muted text-base leading-relaxed mb-4">
               I&apos;m Carol Vella. I&apos;ve spent my career in Arkansas politics, and I&apos;ve watched too many
@@ -264,14 +231,13 @@ export default function Home() {
             Ready to build something that wins?
           </h2>
           <p className="font-sans text-text-muted text-lg mb-10 max-w-xl mx-auto">
-            I take on a limited number of candidates per election cycle. If you&apos;re serious about running,
-            let&apos;s talk now.
+            Let&apos;s talk. We&apos;re excited to see how we can make your campaign seamless.
           </p>
           <Link
             href="/work-with-me"
             className="bg-amber text-white font-sans font-semibold px-8 py-4 rounded text-lg hover:bg-amber/90 transition-colors inline-block"
           >
-            Apply to Work With Me →
+            Inquire Now →
           </Link>
         </div>
       </section>

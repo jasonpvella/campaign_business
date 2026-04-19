@@ -26,7 +26,7 @@ const services = [
   {
     tag: "Ongoing",
     name: "Your Fundraising Engine",
-    body: "This is the part most candidates dread — and the part where I can make the biggest difference. Fundraising is not about asking for money. It's about structure, math, and discipline. I build:",
+    body: "This is the part most candidates dread — and the part where we can make the biggest difference. Fundraising is not about asking for money. It's about structure, math, and discipline. We build:",
     bullets: [
       "A finance plan (how much to raise and exactly where it comes from)",
       "Donor targeting and segmentation",
@@ -54,7 +54,7 @@ const services = [
   {
     tag: "Ongoing",
     name: "Your Campaign Operations",
-    body: "Someone has to be the general contractor — tracking every moving piece and making sure they fit together. That's me.",
+    body: "Someone has to be the general contractor — tracking every moving piece and making sure they fit together. That's us.",
     bullets: [
       "Build and manage the master campaign calendar",
       "Coordinate vendors (digital, mail, field, data, etc.)",
@@ -107,13 +107,13 @@ export default function ServicesPage() {
             Your campaign. Fully built.
           </h1>
           <p className="font-sans text-text-muted text-xl mb-6 max-w-2xl leading-relaxed">
-            I don&apos;t just advise — I build the infrastructure, own the plan, and keep you accountable
+            We don&apos;t just advise — we build the infrastructure, own the plan, and keep you accountable
             from your first announcement to your final vote count.
           </p>
           <p className="font-sans text-text-muted text-base max-w-2xl leading-relaxed">
-            Most political consultants hand you a strategy deck and wish you luck. That&apos;s not how I work.
-            I stay in it with you — building the systems, making the calls, coordinating the pieces, and
-            making sure nothing falls through the cracks. Think of me as your campaign&apos;s general contractor.
+            Most political consultants hand you a strategy deck and wish you luck. That&apos;s not how we work.
+            We stay in it with you — building the systems, making the calls, coordinating the pieces, and
+            making sure nothing falls through the cracks. Think of us as your campaign&apos;s general contractor.
           </p>
         </div>
       </section>
@@ -154,10 +154,10 @@ export default function ServicesPage() {
       <section className="py-20 bg-cream">
         <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12">
           <div>
-            <p className="label-tag mb-4">What I Coordinate (Not Execute)</p>
+            <p className="label-tag mb-4">What We Coordinate (Not Execute)</p>
             <p className="font-sans text-text-muted text-base leading-relaxed mb-6">
-              I stay the quarterback — which means I bring in the right specialists and make sure they&apos;re
-              delivering, but I don&apos;t try to do everything myself. Vendors I coordinate on your behalf:
+              We stay the quarterback — which means we bring in the right specialists and make sure they&apos;re
+              delivering, but we don&apos;t try to do everything ourselves. Vendors we coordinate on your behalf:
             </p>
             <ul className="space-y-2">
               {["Media buying firms", "Digital and social media consultants", "Field and data vendors (NGP VAN, voter file access)", "Compliance and treasurer"].map((v, i) => (
@@ -174,7 +174,7 @@ export default function ServicesPage() {
           <div>
             <p className="label-tag mb-4">What&apos;s Not Included</p>
             <p className="font-sans text-text-muted text-base leading-relaxed mb-6">
-              I believe in being clear about scope:
+              We believe in being clear about scope:
             </p>
             <ul className="space-y-2">
               {[
@@ -190,7 +190,7 @@ export default function ServicesPage() {
               ))}
             </ul>
             <p className="font-sans text-text-muted text-sm mt-4 leading-relaxed">
-              These are specialist services I can help you find and coordinate — but they&apos;re not in my lane to execute.
+              These are specialist services we can help you find and coordinate — but they&apos;re not in our lane to execute.
             </p>
           </div>
         </div>
@@ -226,7 +226,7 @@ export default function ServicesPage() {
               href="/work-with-me"
               className="bg-amber text-white font-sans font-semibold px-7 py-3 rounded hover:bg-amber/90 transition-colors"
             >
-              Apply to Work With Me →
+              Inquire Now →
             </Link>
           </div>
         </div>

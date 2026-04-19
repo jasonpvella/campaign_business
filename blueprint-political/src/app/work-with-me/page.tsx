@@ -4,7 +4,7 @@ import IntakeForm from "@/components/IntakeForm";
 export const metadata: Metadata = {
   title: "Work With Me | Blueprint Political",
   description:
-    "Apply to work with Carol Vella at Blueprint Political. Fill out the intake form and Carol will follow up within 2 business days.",
+    "Inquire about working with Blueprint Political. Fill out the intake form and we'll follow up within 2 business days.",
 };
 
 export default function WorkWithMePage() {
@@ -17,10 +17,10 @@ export default function WorkWithMePage() {
             Let&apos;s see if we&apos;re a fit.
           </h1>
           <p className="font-sans text-text-muted text-lg mb-3 leading-relaxed">
-            Fill out the form below. I review every application personally and follow up within 2 business days.
+            Fill out the form below. We review every inquiry personally and follow up within 2 business days.
           </p>
           <p className="font-sans text-text-muted text-sm">
-            There&apos;s no commitment in applying — just a conversation.
+            There&apos;s no commitment in reaching out — just a conversation.
           </p>
         </div>
       </section>

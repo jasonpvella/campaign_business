@@ -22,7 +22,7 @@ const packages = [
       "One strategy call",
     ],
     note: "No ongoing commitment. Flat fee, delivered in 2 weeks.",
-    cta: "Apply for This Package →",
+    cta: "Inquire About This Package →",
   },
   {
     name: "Foundation",
@@ -37,7 +37,7 @@ const packages = [
       "Vendor coordination",
     ],
     note: "Final scope and rate set in your strategy call based on race size and timeline.",
-    cta: "Apply for This Package →",
+    cta: "Inquire About This Package →",
   },
   {
     name: "Build Your Package",
@@ -78,7 +78,7 @@ const faqs = [
   },
   {
     q: "Do you work with candidates outside Arkansas?",
-    a: "Arkansas is my primary focus, but yes — I work with candidates from other states on a case-by-case basis, particularly for fundraising strategy and campaign planning. Reach out and let's talk.",
+    a: "Arkansas is our primary focus, but yes — we work with candidates from other states on a case-by-case basis, particularly for fundraising strategy and campaign planning. Reach out and let's talk.",
   },
   {
     q: "What if I haven't decided to run yet?",
@@ -101,7 +101,7 @@ export default function PricingPage() {
           </h1>
           <p className="font-sans text-text-muted text-xl max-w-xl leading-relaxed">
             Most political consultants won&apos;t tell you what they charge until you&apos;re already on a call.
-            I believe you deserve to know what you&apos;re investing — before we ever talk.
+            We believe you deserve to know what you&apos;re investing — before we ever talk.
           </p>
         </div>
       </section>
