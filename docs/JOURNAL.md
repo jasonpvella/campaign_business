@@ -2,8 +2,8 @@
 
 ## Executive Snapshot
 
-**Current focus:** IntakeForm live on work-with-me page. Formspree submission wired but pending Carol's one-time verification click.
-**Next session priorities:** Confirm Formspree is verified (Carol clicks confirmation email). Define Critical Rules in CLAUDE.md. Establish data model and begin feature work.
+**Current focus:** IntakeForm fully operational. Formspree wired to carolyvella@gmail.com via verified form ID.
+**Next session priorities:** Define Critical Rules in CLAUDE.md. Establish data model and begin feature work.
 
 ---
 
@@ -17,3 +17,8 @@
 - Fixed IntakeForm error message to include Carol's email (`carolyvella@gmail.com`).
 - Updated required fields: Phone and City/County now required; Office downgraded to optional. Top 5 fields (First Name, Last Name, Email, Phone, City/County) are the only mandatory fields.
 - Identified root cause of submission error: Formspree legacy endpoint requires Carol to click a one-time "Confirm Form" verification link in her inbox before submissions go through.
+
+### 2026-04-19 (session 2)
+- Replaced legacy Formspree endpoint (`formspree.io/carolyvella@gmail.com`) with verified form ID (`formspree.io/f/mwvaqepn`). Verification email never arrived so legacy endpoint was non-functional.
+- Added Vercel deploy (`npx vercel --prod`) as step 5 of Save Project workflow in CLAUDE.md.
+- IntakeForm submission now confirmed working end-to-end.
