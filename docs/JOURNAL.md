@@ -2,21 +2,26 @@
 
 ## Executive Snapshot
 
-**Current focus:** Second round of Carol's copy feedback applied site-wide. Pricing restructured, sections removed, form updated, resources simplified.
-**Next session priorities:** Define Critical Rules in CLAUDE.md. Establish data model and begin feature work. Wire up email capture on homepage and resources page. Confirm git index.lock issue is resolved before next commit.
+**Current focus:** Gated resource forms wired up — email capture on checklist/guide/scripts cards now notifies Carol on every submission via Resend.
+**Next session priorities:** New bio from Carol to replace about page placeholder. Define Critical Rules in CLAUDE.md. Establish data model and begin feature work.
+
+**Open TODOs:**
+- Verify custom domain in Resend → swap `from` address to `noreply@blueprintpolitical.com` (currently using `onboarding@resend.dev`)
+- Auto-email PDFs to resource requesters once PDFs exist (checklist, finance guide, scripts)
 
 ---
 
 ## Historical Log
 
-### 2026-05-12
-- Applied second round of Carol's copy feedback across all six pages. Site deployed to production via Vercel. Git commit blocked by index.lock — Jason to clear manually with `rm ~/Documents/Campaign_Business/.git/index.lock` then `git add -A && git commit && git push`.
-- **Homepage:** subtitle changed to "Campaign consulting based on first-hand candidate experience. Strategy, fundraising and operations made simple."
-- **Services:** hero headline → "Your campaign, built with your capacity in mind."; hero body rewritten to emphasize feasibility; "What We Coordinate" and "What's Not Included" sections removed entirely; "Add-On Packages" renamed "Quick Activation Packages."
-- **About:** first bio paragraph rewritten ("so overwhelmed or don't know what to do. Taking the first few steps is the hardest."); second paragraph replaced with Carol's personal motivation statement ("I'm not in it to fund a vacation home…"); credentials list replaced with: two-time candidate, city council to U.S. Congress support experience, 20+ years corporate background, Democratic Party volunteer leader.
-- **Pricing:** Launch Sprint dropped from $750 to $300, now includes call-time call + script draft; Foundation changed from $1,000 to starting at $500/month, bi-weekly → weekly calls; Optional Add-Ons section removed; five FAQ answers rewritten (school board affordability, can't afford full support, percentage question, client count, haven't decided to run).
-- **Work With Me / IntakeForm:** "Do you have a campaign bank account?" question removed; new question added at bottom: "What are a few 30 minute blocks of time this week that would be convenient for you?"; submit button renamed "Submit My Inquiry."
-- **Resources:** headline → "Free tools for candidates."; subtitle updated to Carol's voice; "Arkansas Campaign Finance" guide renamed "Fundraising Tips and Tricks" with new description; free calculators section removed entirely.
+### 2026-04-19 (session 8)
+- Wired up gated resource forms (checklist, finance guide, scripts) on /resources with Resend email notifications.
+- Created `GatedResources.tsx` client component — per-card independent state: idle → loading → success (green confirmation) or error.
+- Created `/api/resource-request` API route — POSTs to Resend, emails carolyvella@gmail.com with submitter email + resource name on every submission.
+- Installed `resend` package; RESEND_API_KEY added to Vercel project env vars.
+- From field: `onboarding@resend.dev` (sandbox). TODO: verify custom domain → swap to `noreply@blueprintpolitical.com`.
+- TODO: auto-email PDFs to submitters once PDFs exist.
+- Rule established: Carol always gets notified of every resource request, regardless of whether a PDF is sent.
+- Confirmed IntakeForm already shows success screen ("You're in.") on submission — no change needed.
 
 ### 2026-04-19 (session 7)
 - Removed all em dash sentence breaks site-wide (page, about, services, pricing, resources, work-with-me, IntakeForm). Replaced with periods, commas, or colons depending on context.
