@@ -104,16 +104,11 @@ export default function ServicesPage() {
       <section className="blueprint-grid py-20 md:py-28">
         <div className="max-w-6xl mx-auto px-6">
           <h1 className="font-serif text-navy text-5xl md:text-6xl leading-tight mb-6">
-            Your campaign. Fully built.
+            Your campaign, built with your capacity in mind.
           </h1>
           <p className="font-sans text-text-muted text-xl mb-6 max-w-2xl leading-relaxed">
-            We don&apos;t just advise. We build the infrastructure, own the plan, and keep you accountable
-            from your first announcement to your final vote count.
-          </p>
-          <p className="font-sans text-text-muted text-base max-w-2xl leading-relaxed">
-            Most political consultants hand you a strategy deck and wish you luck. That&apos;s not how we work.
-            We stay in it with you: building the systems, making the calls, coordinating the pieces, and
-            making sure nothing falls through the cracks. Think of us as your campaign&apos;s general contractor.
+            We will build a campaign plan specific to your race and what is going on in your life so that
+            the plan is feasible. We&apos;ll help to ensure that nothing falls through the cracks.
           </p>
         </div>
       </section>
@@ -150,56 +145,10 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* What I Coordinate */}
-      <section className="py-20 bg-cream">
-        <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12">
-          <div>
-            <p className="label-tag mb-4">What We Coordinate (Not Execute)</p>
-            <p className="font-sans text-text-muted text-base leading-relaxed mb-6">
-              We stay the quarterback. We bring in the right specialists and make sure they&apos;re
-              delivering, but we don&apos;t try to do everything ourselves. Vendors we coordinate on your behalf:
-            </p>
-            <ul className="space-y-2">
-              {["Media buying firms", "Digital and social media consultants", "Field and data vendors (NGP VAN, voter file access)", "Compliance and treasurer"].map((v, i) => (
-                <li key={i} className="font-sans text-text-muted text-sm flex gap-2">
-                  <span className="text-amber">—</span>
-                  <span>{v}</span>
-                </li>
-              ))}
-            </ul>
-            <blockquote className="mt-6 border-l-4 border-amber pl-4 font-serif text-navy text-lg">
-              &ldquo;You get one team that owns the outcome. Not five consultants pointing fingers at each other.&rdquo;
-            </blockquote>
-          </div>
-          <div>
-            <p className="label-tag mb-4">What&apos;s Not Included</p>
-            <p className="font-sans text-text-muted text-base leading-relaxed mb-6">
-              We believe in being clear about scope:
-            </p>
-            <ul className="space-y-2">
-              {[
-                "Financial reporting and state compliance filing",
-                "Ad buying execution",
-                "Daily social media posting",
-                "Advanced data modeling or voter targeting analysis",
-              ].map((v, i) => (
-                <li key={i} className="font-sans text-text-muted text-sm flex gap-2">
-                  <span className="text-text-muted">×</span>
-                  <span>{v}</span>
-                </li>
-              ))}
-            </ul>
-            <p className="font-sans text-text-muted text-sm mt-4 leading-relaxed">
-              These are specialist services we can help you find and coordinate, but they&apos;re not in our lane to execute.
-            </p>
-          </div>
-        </div>
-      </section>
-
       {/* Add-Ons */}
       <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-6">
-          <p className="label-tag mb-4">Add-On Packages</p>
+          <p className="label-tag mb-4">Quick Activation Packages</p>
           <div className="grid md:grid-cols-3 gap-6 mb-10">
             {addOns.map((a, i) => (
               <div key={i} className="border border-navy/10 rounded p-6">

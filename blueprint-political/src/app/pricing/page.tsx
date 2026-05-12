@@ -4,13 +4,13 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Pricing | Blueprint Political",
   description:
-    "Transparent campaign consulting pricing from Blueprint Political. Launch Sprint at $750 flat. Foundation from $1,000/month. Custom packages built around your race.",
+    "Transparent campaign consulting pricing from Blueprint Political. Launch Sprint at $300 flat. Foundation from $500/month. Custom packages built around your race.",
 };
 
 const packages = [
   {
     name: "Launch Sprint",
-    price: "$750 flat",
+    price: "$300 flat",
     duration: "2-week engagement",
     bestFor: "Candidates still deciding whether to run, need a blueprint fast, or want a plan before committing to full support.",
     includes: [
@@ -20,19 +20,21 @@ const packages = [
       "Core messaging framework",
       "30-day action plan",
       "One strategy call",
+      "One call-time call",
+      "Call-time script draft",
     ],
     note: "No ongoing commitment. Flat fee, delivered in 2 weeks.",
     cta: "Inquire About This Package →",
   },
   {
     name: "Foundation",
-    price: "Starting at $1,000/month",
+    price: "Starting at $500/month",
     duration: "Typically 3–5 months",
     bestFor: "School board, small city council, and county races where you need real support but are working with a lean budget.",
     includes: [
       "Full Campaign Blueprint (weeks 1–3)",
       "Fundraising plan and weekly call time coaching",
-      "Bi-weekly strategy calls",
+      "Weekly strategy calls",
       "Campaign calendar management",
       "Vendor coordination",
     ],
@@ -62,19 +64,19 @@ const faqs = [
   },
   {
     q: "Is $1,000/month realistic for a school board race?",
-    a: "Yes, and it's designed to be. School board and small city council races in Arkansas don't have massive budgets, and we built the Foundation package specifically for that reality. The goal is to get you real, structured support without pricing you out of it.",
+    a: "Yes, even $500/month can give you the structure you need to run a campaign. We'll provide clear opportunities for volunteers to step in to help cover the work.",
   },
   {
     q: "What if I can't afford full campaign support?",
-    a: "The Launch Sprint at $750 flat is a great starting point. You'll walk away with a campaign blueprint, a win number, and a 30-day plan. That's more than most first-time candidates have. From there, you can decide whether to continue.",
+    a: "No problem. We can customize the plan to focus on your biggest needs.",
   },
   {
     q: "Do you take a percentage of what I raise?",
-    a: "No. We charge a flat monthly fee, not a percentage of fundraising. Taking a cut of what a candidate raises is considered bad practice in the industry. Frankly, it misaligns incentives. Our job is to help you raise what your race requires, not to maximize our fee.",
+    a: "No. Our goal is to help you raise what your campaign needs to run a successful race, not to maximize our fees.",
   },
   {
     q: "How many clients do you take at once?",
-    a: "A small number, intentionally. We don't run a high-volume operation. When you're a Blueprint Political client, you get our full attention, not a junior staffer on email.",
+    a: "A small number, intentionally. We don't run a high-volume operation. When you're a Blueprint Political client, you get our full attention, not a junior staffer on email. With a limited number of clients, Carol can be readily accessed via text, phone and email.",
   },
   {
     q: "Do you work with candidates outside Arkansas?",
@@ -82,7 +84,7 @@ const faqs = [
   },
   {
     q: "What if I haven't decided to run yet?",
-    a: "That's fine. The Launch Sprint is actually perfect for this moment. It helps you figure out whether running makes sense, what it would take to be competitive, and what your first 30 days would look like if you did.",
+    a: "No problem. We're happy to have a conversation and help you think through your decision. No cost.",
   },
   {
     q: "What's the difference between the Launch Sprint and full campaign support?",
@@ -143,34 +145,6 @@ export default function PricingPage() {
               </div>
             </div>
           ))}
-        </div>
-      </section>
-
-      {/* Add-Ons */}
-      <section className="py-16 bg-cream">
-        <div className="max-w-6xl mx-auto px-6">
-          <p className="label-tag mb-6">Optional Add-Ons</p>
-          <div className="grid md:grid-cols-3 gap-6">
-            {[
-              {
-                name: "Win Bonus",
-                desc: "A flat pre-agreed bonus paid only if you win. Discussed and agreed at the start of engagement.",
-              },
-              {
-                name: "Fundraising Intensive",
-                desc: "A 4-week focused fundraising sprint, priced separately. Ideal for adding to an existing engagement.",
-              },
-              {
-                name: "Volunteer Activation Boost",
-                desc: "Short-term grassroots push: recruitment, onboarding, and a 2-week activation sprint.",
-              },
-            ].map((a, i) => (
-              <div key={i} className="bg-white border border-navy/10 rounded p-6">
-                <h3 className="font-serif text-navy text-lg mb-2">{a.name}</h3>
-                <p className="font-sans text-text-muted text-sm leading-relaxed">{a.desc}</p>
-              </div>
-            ))}
-          </div>
         </div>
       </section>
 

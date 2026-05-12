@@ -9,11 +9,10 @@ export const metadata: Metadata = {
 };
 
 const credentials = [
-  "5 campaigns supported across city council, school board, and county races",
-  "[X] raised across client campaigns", // TODO: real number
-  "Arkansas-based. I know the donor landscape, the filing rules, and the local dynamics.",
-  "Fundraising specialist. The part of campaigning most candidates fear most.",
-  "Direct candidate access. You work with Carol, not an account manager.",
+  "Two-time personal candidate experience",
+  "Candidate support experience from city council to U.S. Congress, partisan and non-partisan",
+  "20+ years corporate experience in marketing, sales, human resources and merchandising",
+  "Volunteer leader within the Democratic Party, integrated into the Arkansas support system",
 ];
 
 const howIWork = [
@@ -67,10 +66,8 @@ export default function AboutPage() {
         <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-12">
           <div className="md:col-span-2 space-y-6">
             <p className="font-sans text-text-muted text-base md:text-lg leading-relaxed">
-              I&apos;ve watched a lot of first-time candidates walk into a race with everything it takes to win: a
-              real message, genuine community support, and the drive to see it through. And then lose. Not because
-              they weren&apos;t good enough. But because nobody helped them build the infrastructure around those
-              qualities.
+              I&apos;ve watched a lot of first-time candidates fail because they are so overwhelmed or don&apos;t
+              know what to do. Taking the first few steps is the hardest.
             </p>
             <p className="font-sans text-text-muted text-base md:text-lg leading-relaxed">
               {/* TODO: Carol to fill in with her specific background details */}
@@ -86,10 +83,9 @@ export default function AboutPage() {
               every client gets our full attention, not a handoff to someone junior.
             </p>
             <p className="font-sans text-text-muted text-base md:text-lg leading-relaxed">
-              Arkansas has no shortage of people who want to serve their communities. What it lacks is accessible,
-              structured support for the candidates who aren&apos;t connected to political infrastructure yet.
-              That&apos;s who we built Blueprint Political for. If you&apos;re a first-time candidate who is serious
-              about winning, we want to help you do exactly that.
+              I have been a candidate. I started Blueprint Political because I want the candidate experience to be
+              easier for you so that more candidates will run and we win more of these races. I&apos;m not in it to
+              fund a vacation home. I&apos;m charging enough to drive accountability that leads to results.
             </p>
           </div>
 

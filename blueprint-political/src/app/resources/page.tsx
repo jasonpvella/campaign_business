@@ -1,12 +1,6 @@
-import type { Metadata } from "next";
-import WinNumberCalculator from "@/components/WinNumberCalculator";
-import FundraisingEstimator from "@/components/FundraisingEstimator";
+"use client";
 
-export const metadata: Metadata = {
-  title: "Free Resources | Blueprint Political",
-  description:
-    "Free tools and guides for first-time Arkansas candidates: readiness checklist, campaign finance guide, fundraising scripts, win number calculator, and fundraising estimator.",
-};
+import { useState } from "react";
 
 const gatedResources = [
   {
@@ -16,8 +10,8 @@ const gatedResources = [
     name: "checklist",
   },
   {
-    title: "Arkansas Campaign Finance: What You Need to Know Before You File",
-    desc: "Filing deadlines, disclosure requirements, common mistakes that trip up first-timers, and what to do before you open your campaign account. Arkansas-specific, plain English.",
+    title: "Fundraising Tips and Tricks",
+    desc: "The basics of campaign fundraising, fundraising events, call-time and guidelines.",
     cta: "Send Me the Guide →",
     name: "finance_guide",
   },
@@ -29,6 +23,77 @@ const gatedResources = [
   },
 ];
 
+type CardState = "idle" | "submitting" | "success" | "error";
+
+function ResourceCard({ resource }: { resource: typeof gatedResources[0] }) {
+  const [state, setState] = useState<CardState>("idle");
+  const [email, setEmail] = useState("");
+
+  async function handleSubmit(e: React.FormEvent) {
+    e.preventDefault();
+    setState("submitting");
+
+    try {
+      const res = await fetch("https://formspree.io/f/mwvaqepn", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify({
+          email,
+          resource: resource.name,
+          resource_title: resource.title,
+          _subject: `Resource Request: ${resource.title}`,
+        }),
+      });
+
+      if (res.ok) {
+        setState("success");
+        setEmail("");
+      } else {
+        setState("error");
+      }
+    } catch {
+      setState("error");
+    }
+  }
+
+  return (
+    <div className="border border-navy/10 rounded p-6 flex flex-col">
+      <h2 className="font-serif text-navy text-lg leading-snug mb-3">{resource.title}</h2>
+      <p className="font-sans text-text-muted text-sm leading-relaxed mb-6 flex-1">{resource.desc}</p>
+
+      {state === "success" ? (
+        <div className="bg-amber/10 border border-amber/30 rounded px-4 py-4 text-sm font-sans text-navy text-center">
+          Got it! Check your inbox — we'll send it shortly.
+        </div>
+      ) : (
+        <form onSubmit={handleSubmit} className="space-y-3">
+          <input type="hidden" name="resource" value={resource.name} />
+          <input
+            type="email"
+            placeholder="Your email address"
+            required
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            className="w-full border border-navy/20 rounded px-4 py-3 font-sans text-sm focus:outline-none focus:border-amber bg-white"
+          />
+          <button
+            type="submit"
+            disabled={state === "submitting"}
+            className="w-full bg-amber text-white font-sans font-semibold px-5 py-3 rounded hover:bg-amber/90 transition-colors text-sm disabled:opacity-60"
+          >
+            {state === "submitting" ? "Sending…" : resource.cta}
+          </button>
+          {state === "error" && (
+            <p className="font-sans text-red-500 text-xs text-center">
+              Something went wrong. Please try again or email us directly.
+            </p>
+          )}
+        </form>
+      )}
+    </div>
+  );
+}
+
 export default function ResourcesPage() {
   return (
     <>
@@ -36,10 +101,10 @@ export default function ResourcesPage() {
       <section className="blueprint-grid py-20 md:py-24">
         <div className="max-w-6xl mx-auto px-6">
           <h1 className="font-serif text-navy text-5xl md:text-6xl leading-tight mb-4">
-            Free tools for first-time Arkansas candidates.
+            Free tools for candidates.
           </h1>
           <p className="font-sans text-text-muted text-xl max-w-xl leading-relaxed">
-            No fluff. No email walls on the calculators. Just things that actually help.
+            No catch. Just an effort to help you get started and to get a feel for my practical, direct style of guidance.
           </p>
         </div>
       </section>
@@ -50,62 +115,8 @@ export default function ResourcesPage() {
           <p className="label-tag mb-8">Free Guides (email required)</p>
           <div className="grid md:grid-cols-3 gap-6">
             {gatedResources.map((r, i) => (
-              <div key={i} className="border border-navy/10 rounded p-6 flex flex-col">
-                <h2 className="font-serif text-navy text-lg leading-snug mb-3">{r.title}</h2>
-                <p className="font-sans text-text-muted text-sm leading-relaxed mb-6 flex-1">{r.desc}</p>
-                {/* TODO: wire up to email capture service — send PDF to submitted email */}
-                <form className="space-y-3">
-                  <input
-                    type="hidden"
-                    name="resource"
-                    value={r.name}
-                  />
-                  <input
-                    type="email"
-                    placeholder="Your email address"
-                    required
-                    className="w-full border border-navy/20 rounded px-4 py-3 font-sans text-sm focus:outline-none focus:border-amber bg-white"
-                  />
-                  <button
-                    type="submit"
-                    className="w-full bg-amber text-white font-sans font-semibold px-5 py-3 rounded hover:bg-amber/90 transition-colors text-sm"
-                  >
-                    {r.cta}
-                  </button>
-                </form>
-              </div>
+              <ResourceCard key={i} resource={r} />
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Interactive Calculators */}
-      <section className="py-16 bg-cream">
-        <div className="max-w-6xl mx-auto px-6">
-          <p className="label-tag mb-2">Free Calculators</p>
-          <p className="font-sans text-text-muted text-sm mb-10">No email required. Bring your honest numbers.</p>
-
-          <div className="grid md:grid-cols-2 gap-10">
-            {/* Win Number Calculator */}
-            <div>
-              <h2 className="font-serif text-navy text-2xl mb-2">Win Number Calculator</h2>
-              <p className="font-sans text-text-muted text-sm leading-relaxed mb-6">
-                Enter your district&apos;s last comparable election turnout and the number of candidates in your
-                race. Get your win number (the exact votes you need to win) plus suggested door-knock and phone
-                call targets.
-              </p>
-              <WinNumberCalculator />
-            </div>
-
-            {/* Fundraising Estimator */}
-            <div>
-              <h2 className="font-serif text-navy text-2xl mb-2">Fundraising Goal Estimator</h2>
-              <p className="font-sans text-text-muted text-sm leading-relaxed mb-6">
-                Pick your race type and how many months you have until the election. Get a realistic raise goal,
-                monthly targets, and an estimate of how many call time hours per week it takes to hit them.
-              </p>
-              <FundraisingEstimator />
-            </div>
           </div>
         </div>
       </section>

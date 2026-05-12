@@ -136,15 +136,6 @@ export default function IntakeForm() {
             </select>
           </div>
           <div>
-            <label className="label-tag block mb-2">Do you have a campaign bank account?</label>
-            <select name="bank_account" className={selectClass}>
-              <option value="">Select one</option>
-              <option>Yes</option>
-              <option>No</option>
-              <option>Not sure</option>
-            </select>
-          </div>
-          <div>
             <label className="label-tag block mb-2">Roughly how much do you need to raise?</label>
             <select name="raise_goal" className={selectClass}>
               <option value="">Select one</option>
@@ -197,6 +188,10 @@ export default function IntakeForm() {
             <label className="label-tag block mb-2">Anything else you want Carol to know? (optional)</label>
             <textarea name="notes" rows={4} className={`${inputClass} resize-none`} />
           </div>
+          <div>
+            <label className="label-tag block mb-2">What are a few 30 minute blocks of time this week that would be convenient for you?</label>
+            <textarea name="availability" rows={3} placeholder="e.g. Tuesday 10–11am, Thursday after 3pm" className={`${inputClass} resize-none`} />
+          </div>
         </div>
       </div>
 
@@ -209,7 +204,7 @@ export default function IntakeForm() {
         disabled={loading}
         className="w-full bg-amber text-white font-sans font-semibold py-4 rounded text-base hover:bg-amber/90 transition-colors disabled:opacity-50"
       >
-        {loading ? 'Submitting...' : 'Submit My Application →'}
+        {loading ? 'Submitting...' : 'Submit My Inquiry →'}
       </button>
     </form>
   );
