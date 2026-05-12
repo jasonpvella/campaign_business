@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "About Carol Vella | Blueprint Political",
@@ -39,25 +38,14 @@ export default function AboutPage() {
     <>
       {/* Hero */}
       <section className="blueprint-grid py-20 md:py-28">
-        <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-end">
-          <div>
-            <h1 className="font-serif text-navy text-5xl md:text-6xl leading-tight mb-4">
-              Hi, I&apos;m Carol.
-            </h1>
-            <p className="font-sans text-text-muted text-xl leading-relaxed">
-              Arkansas campaign consultant. Fundraising specialist. The person who keeps your campaign on plan,
-              on pace, and on budget from announcement to Election Day.
-            </p>
-          </div>
-          <div className="relative w-1/2 aspect-[480/579] rounded overflow-hidden">
-            <Image
-              src="/images/carol-vella.jpg"
-              alt="Carol Vella"
-              fill
-              className="object-cover object-center"
-              priority
-            />
-          </div>
+        <div className="max-w-6xl mx-auto px-6">
+          <h1 className="font-serif text-navy text-5xl md:text-6xl leading-tight mb-4">
+            Hi, I&apos;m Carol.
+          </h1>
+          <p className="font-sans text-text-muted text-xl leading-relaxed max-w-xl">
+            Arkansas campaign consultant. Fundraising specialist. The person who keeps your campaign on plan,
+            on pace, and on budget from announcement to Election Day.
+          </p>
         </div>
       </section>
 

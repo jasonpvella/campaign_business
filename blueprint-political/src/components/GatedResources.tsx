@@ -10,8 +10,8 @@ const gatedResources = [
     name: "checklist",
   },
   {
-    title: "Arkansas Campaign Finance: What You Need to Know Before You File",
-    desc: "Filing deadlines, disclosure requirements, common mistakes that trip up first-timers, and what to do before you open your campaign account. Arkansas-specific, plain English.",
+    title: "Fundraising Tips and Tricks",
+    desc: "The basics of campaign fundraising, fundraising events, call-time and guidelines.",
     cta: "Send Me the Guide →",
     name: "finance_guide",
   },

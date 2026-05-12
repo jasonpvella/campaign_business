@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
-import WinNumberCalculator from "@/components/WinNumberCalculator";
-import FundraisingEstimator from "@/components/FundraisingEstimator";
 import GatedResources from "@/components/GatedResources";
 
-import { useState } from "react";
+export const metadata: Metadata = {
+  title: "Free Resources | Blueprint Political",
+  description:
+    "Free tools and guides for candidates: readiness checklist, fundraising tips and tricks, and call-time scripts.",
+};
 
 export default function ResourcesPage() {
   return (
