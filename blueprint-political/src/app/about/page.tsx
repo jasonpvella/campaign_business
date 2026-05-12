@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "About Carol Vella | Blueprint Political",
@@ -38,14 +39,25 @@ export default function AboutPage() {
     <>
       {/* Hero */}
       <section className="blueprint-grid py-20 md:py-28">
-        <div className="max-w-6xl mx-auto px-6">
-          <h1 className="font-serif text-navy text-5xl md:text-6xl leading-tight mb-4">
-            Hi, I&apos;m Carol.
-          </h1>
-          <p className="font-sans text-text-muted text-xl leading-relaxed max-w-xl">
-            Arkansas campaign consultant. Fundraising specialist. The person who keeps your campaign on plan,
-            on pace, and on budget from announcement to Election Day.
-          </p>
+        <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+          <div>
+            <h1 className="font-serif text-navy text-5xl md:text-6xl leading-tight mb-4">
+              Hi, I&apos;m Carol.
+            </h1>
+            <p className="font-sans text-text-muted text-xl leading-relaxed">
+              Arkansas campaign consultant. Fundraising specialist. The person who keeps your campaign on plan,
+              on pace, and on budget from announcement to Election Day.
+            </p>
+          </div>
+          <div className="relative aspect-[4/5] rounded overflow-hidden">
+            <Image
+              src="/images/carol-headshot.jpg"
+              alt="Carol Vella"
+              fill
+              className="object-cover object-top"
+              priority
+            />
+          </div>
         </div>
       </section>
 
@@ -75,6 +87,16 @@ export default function AboutPage() {
               easier for you so that more candidates will run and we win more of these races. I&apos;m not in it to
               fund a vacation home. I&apos;m charging enough to drive accountability that leads to results.
             </p>
+
+            {/* Family photo */}
+            <div className="relative aspect-video rounded overflow-hidden mt-4">
+              <Image
+                src="/images/carol-family.jpg"
+                alt="Carol Vella and family"
+                fill
+                className="object-cover object-center"
+              />
+            </div>
           </div>
 
           {/* Credentials */}
@@ -110,10 +132,36 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Photo gallery placeholder */}
+      {/* Photo gallery */}
       <section className="py-16 bg-white">
         <div className="max-w-6xl mx-auto px-6">
+          <div className="grid md:grid-cols-3 gap-4">
+            <div className="relative aspect-square rounded overflow-hidden">
+              <Image
+                src="/images/carol-jp-campaign.jpg"
+                alt="Carol Vella campaign sign"
+                fill
+                className="object-cover object-center"
+              />
             </div>
+            <div className="relative aspect-square rounded overflow-hidden">
+              <Image
+                src="/images/carol-speech.jpg"
+                alt="Carol Vella speaking at campaign event"
+                fill
+                className="object-cover object-center"
+              />
+            </div>
+            <div className="relative aspect-square rounded overflow-hidden">
+              <Image
+                src="/images/carol-democrats-group.jpg"
+                alt="Carol Vella with Arkansas Democrats"
+                fill
+                className="object-cover object-center"
+              />
+            </div>
+          </div>
+        </div>
       </section>
 
       {/* CTA */}

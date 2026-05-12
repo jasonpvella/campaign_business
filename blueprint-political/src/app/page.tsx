@@ -169,21 +169,31 @@ export default function Home() {
 
       {/* About Teaser */}
       <section className="py-20 bg-white">
-        <div className="max-w-6xl mx-auto px-6 max-w-2xl">
-          <blockquote className="font-serif text-navy text-2xl md:text-3xl leading-snug mb-6 border-l-4 border-amber pl-6">
-            &ldquo;I have run for office twice and my goal is to make it easier for you.&rdquo;
-          </blockquote>
-          <p className="font-sans text-text-muted text-base leading-relaxed mb-4">
-            I&apos;m Carol Vella. I&apos;ve spent my career in Arkansas politics, and I&apos;ve watched too many
-            good candidates lose races they should have won. Not because they weren&apos;t good enough. Because
-            they didn&apos;t have structure, a fundraising plan, or anyone keeping them honest.
-          </p>
-          <p className="font-sans text-text-muted text-base leading-relaxed mb-6">
-            Blueprint Political exists to fix that.
-          </p>
-          <Link href="/about" className="font-sans text-amber font-semibold hover:underline">
-            More About Carol →
-          </Link>
+        <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+          <div className="relative aspect-square rounded overflow-hidden">
+            <Image
+              src="/images/carol-vote-here.jpg"
+              alt="Carol Vella at the polls"
+              fill
+              className="object-cover object-center"
+            />
+          </div>
+          <div>
+            <blockquote className="font-serif text-navy text-2xl md:text-3xl leading-snug mb-6 border-l-4 border-amber pl-6">
+              &ldquo;I have run for office twice and my goal is to make it easier for you.&rdquo;
+            </blockquote>
+            <p className="font-sans text-text-muted text-base leading-relaxed mb-4">
+              I&apos;m Carol Vella. I&apos;ve spent my career in Arkansas politics, and I&apos;ve watched too many
+              good candidates lose races they should have won. Not because they weren&apos;t good enough. Because
+              they didn&apos;t have structure, a fundraising plan, or anyone keeping them honest.
+            </p>
+            <p className="font-sans text-text-muted text-base leading-relaxed mb-6">
+              Blueprint Political exists to fix that.
+            </p>
+            <Link href="/about" className="font-sans text-amber font-semibold hover:underline">
+              More About Carol →
+            </Link>
+          </div>
         </div>
       </section>
 
