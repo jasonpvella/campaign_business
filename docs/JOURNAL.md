@@ -2,16 +2,29 @@
 
 ## Executive Snapshot
 
-**Current focus:** Gated resource forms wired up — email capture on checklist/guide/scripts cards now notifies Carol on every submission via Resend.
-**Next session priorities:** New bio from Carol to replace about page placeholder. Define Critical Rules in CLAUDE.md. Establish data model and begin feature work.
+**Current focus:** Photos added to about page and homepage. Resources email capture confirmed working via Resend. Git merge conflicts from diverged branches resolved.
+**Next session priorities:** New bio from Carol to replace about page placeholder. Define Critical Rules in CLAUDE.md. Establish data model and begin feature work. Verify custom domain in Resend.
 
 **Open TODOs:**
 - Verify custom domain in Resend → swap `from` address to `noreply@blueprintpolitical.com` (currently using `onboarding@resend.dev`)
 - Auto-email PDFs to resource requesters once PDFs exist (checklist, finance guide, scripts)
+- Homepage email capture band (Free Resource Band) still has TODO — wire up to Resend like resources page
 
 ---
 
 ## Historical Log
+
+### 2026-05-12
+- Debugged resources page email forms — forms had no submit handler (TODO comment confirmed). Remote (session 8) already had `GatedResources.tsx` wired to Resend via `/api/resource-request`. Resolved merge conflict between May 12 Carol copy branch and session 8 branch.
+- Cleaned up resources/page.tsx: removed dead imports (WinNumberCalculator, FundraisingEstimator, useState), restored metadata export, confirmed GatedResources component is the live implementation.
+- Updated `GatedResources.tsx`: renamed "Arkansas Campaign Finance: What You Need to Know Before You File" → "Fundraising Tips and Tricks" with updated description per Carol's copy feedback.
+- About page headshot: removed, then restored with professional headshot (`carol-headshot.jpg` / `partner-2023hn-champ-vella-rev.jpg`).
+- Added photos site-wide from Carol's new image set:
+  - About hero: `carol-headshot.jpg` (professional portrait, two-column layout restored)
+  - About bio: `carol-family.jpg` (professional family pic, below bio text)
+  - About photo gallery: `carol-jp-campaign.jpg`, `carol-speech.jpg`, `carol-democrats-group.jpg` (3-column grid, previously empty placeholder section)
+  - Homepage About Teaser: `carol-vote-here.jpg` alongside the blockquote (two-column layout)
+- Persistent git index.lock / HEAD.lock issues throughout session — all git operations requiring lock removal must be run from Jason's terminal, not the sandbox.
 
 ### 2026-04-19 (session 8)
 - Wired up gated resource forms (checklist, finance guide, scripts) on /resources with Resend email notifications.
