@@ -135,27 +135,11 @@ export default function AboutPage() {
       {/* Photo gallery */}
       <section className="py-16 bg-white">
         <div className="max-w-6xl mx-auto px-6">
-          <div className="grid md:grid-cols-3 gap-4">
+          <div className="max-w-sm">
             <div className="relative aspect-square rounded overflow-hidden">
               <Image
                 src="/images/carol-jp-campaign.jpg"
                 alt="Carol Vella campaign sign"
-                fill
-                className="object-cover object-center"
-              />
-            </div>
-            <div className="relative aspect-square rounded overflow-hidden">
-              <Image
-                src="/images/carol-speech.jpg"
-                alt="Carol Vella speaking at campaign event"
-                fill
-                className="object-cover object-center"
-              />
-            </div>
-            <div className="relative aspect-square rounded overflow-hidden">
-              <Image
-                src="/images/carol-democrats-group.jpg"
-                alt="Carol Vella with Arkansas Democrats"
                 fill
                 className="object-cover object-center"
               />
